@@ -1,26 +1,42 @@
 <html lang="en">
+
 <head>
-    <% include ../helpers/head %>
+	<% include ~/Desktop/BaseWebApp/project/html/helpers/head.ejs %>
 </head>
+
 <!--test please-->
 <body>
 
-  <!-- the classes 'page-header' and 'btn btn-default' create bootstrap components.  -->
-  <!-- Check out more components here: http://getbootstrap.com/components/ -->
-  <div class="page-header">
-    <h1>YOYO web apps are so cool</h1>
-  </div>
+<button id="signin" type="button" onclick="toggleSignIn()">
+Log in
+</button>
 
-  <p id="demo">
-    This is me testing out a lil html file
-  </p>
+<!-- the classes 'page-header' and 'btn btn-default' create bootstrap components.  -->
+<!-- Check out more components here: http://getbootstrap.com/components/ -->
+<div class="page-header">
+<h1>YOYO web apps are so cool</h1>
+</div>
 
-  <button class="btn btn-default" type="button" onclick="myFunction()">
-    Try it
-  </button>
+<p id="demo">
+This is me testing out a lil html file
+</p>
 
-  <div id="doge-image"/>
+<button class="btn btn-default" type="button" onclick="myFunction()">
+Try it
+</button>
 
+<div id="doge-image"/>
+
+<form>
+Post Title:<br>
+<input id="posttitle" type="text" name="title"><br>
+Post:<br>
+<input id="post" type="text" name="post">
+</form>
+
+<button id="post" type="button" onclick="myFunction()">
+Submit
+</button>
 </body>
 
 </html>
