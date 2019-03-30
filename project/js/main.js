@@ -23,6 +23,6 @@ function toggleSignIn() {
         firebase.auth().signOut();
     }
         //This disables the button until login or logout is successful. You'll want to replace 'login-button' with the id of your login button.
-    $('signin').attr("disabled", true);
+    $('loginButton').attr("disabled", true);
 }
 }
