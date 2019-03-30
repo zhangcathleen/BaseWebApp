@@ -25,4 +25,3 @@ function toggleSignIn() {
         //This disables the button until login or logout is successful. You'll want to replace 'login-button' with the id of your login button.
     $('loginButton').attr("disabled", true);
 }
-}
